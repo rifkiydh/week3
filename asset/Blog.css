@@ -1,0 +1,360 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+nav {
+    background-color: #FE4E30;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    box-shadow: 0px 0px 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.left ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.left ul li a {
+    text-decoration: none;
+    padding: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: black;
+}
+
+.right a {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: #F7F8FA;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 80px;
+    float: right;
+    margin-top: 5px;
+}
+
+.right {
+    width: 100px;
+    align-items: center;
+}
+
+.right button {
+    display: none;
+    background-color: #FE4E30;
+    padding: 10px;
+    border: 1px solid #FE4E30;
+    color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* Hamburger */
+
+.humberger-list {
+    display: none;
+    flex-direction: column;
+    background-color: #FE4E30;
+}
+
+.humberger-list.active {
+    display: flex;
+}
+
+.humberger-list a {
+    margin: auto;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.humberger-list a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* AND NAVBAR */
+            
+
+/* Blog Form */
+.blog-form {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .blog-form .form-container {
+    width: 500px;
+  }
+  
+  .blog-form .form-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .blog-form form label {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .blog-form form input,
+  textarea,
+  select {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+  }
+  
+  .blog-form form textarea {
+    height: 250px;
+  }
+  
+  .blog-form form .input-blog-image-group {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .blog-form form .input-blog-image-group label p {
+    font-size: 15px;
+  }
+  
+  .blog-form form .input-blog-image-group label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .blog-form form .button-group {
+    text-align: right;
+  }
+  
+  .blog-form form button {
+    margin-top: 50px;
+    padding: 8px 20px;
+    font-size: 17px;
+    background: #FE4E30;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 120px;
+  }
+  
+  .blog hr {
+    border: 1px solid #dbdbdb;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* Blog list */
+  .blog .blog-list {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .blog .blog-list .blog-list-item {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #dbdbdb;
+    border-radius: 8px;
+    display: flex;
+  }
+  
+  .blog .blog-list .blog-list-item .blog-image {
+    flex: 1;
+  }
+  
+  .blog .blog-list .blog-list-item .blog-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .blog .blog-list .blog-list-item .blog-content {
+    padding-left: 20px;
+    flex: 2;
+  }
+  
+  .blog-content p {
+    width: 500px;
+    word-wrap: break-word;
+  }
+  
+  .blog .blog-list .btn-group {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .blog .blog-list .btn-group .btn-edit {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #dbdbdb;
+  }
+  
+  .blog .blog-list .btn-group .btn-post {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #FE4E30;
+    color: #fff;
+  }
+  
+  .blog .blog-list h1 a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .blog .blog-list .detail-blog-content {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  .blog .blog-list .blog-list-item p {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+  }
+  
+  /* Blog Detail */
+  .blog-detail {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+  }
+  
+  .blog-detail-container {
+    width: 80%;
+    margin: 40px 0;
+  }
+  
+  .blog-detail-container img {
+    width: 100%;
+    border: 1px solid;
+  }
+  
+  .blog-detail-container h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 120%;
+    margin-bottom: 15px;
+  }
+  
+  .blog-detail-container .author {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+  
+  .blog-detail-container p {
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: justify;
+  }
+  
+  @media only screen and (max-width: 1153px) {
+    .blog-form .form-container {
+      width: 100%;
+      margin: 0px 30px;
+    }
+  
+    .blog .blog-list .blog-list-item {
+      flex-direction: column;
+    }
+  }
+
+
+/* RESPONSIF NAVBAR */
+
+@media screen and (max-width: 1181px){
+    .container{
+        display: block;
+        padding: 5px;
+        
+    }
+    
+    .right button {
+        display: flex;
+    }
+
+    .right a {
+        display: none;
+    }
+    
+    .left ul{
+        display: none;
+    }
+
+    .icon {
+        
+        margin:40px auto;
+        
+    }
+
+}
+/* AND RESPONSIF NAVBAR */
+
+/* RESPONSIF FORM PROJECT */
+
+@media (min-width: 600px) {
+    .awal-akhir {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    button {
+        width: 70px;
+        float: right;
+    }
+
+    .technologi {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+/* AND RESPONSIF PROJECT FORM */
+

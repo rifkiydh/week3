@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/asset/Blog.css">
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Blog">Blog</a></li>
+                <li><a href="/testimonial">Testimonial</a></li>
+            </ul>
+        </div>
+    
+        <div class="right">
+            <a href="/contact">Contact Me</a>
+            <button onclick="btnHmbrgr()"><i class="fa-solid fa-bars fa-xl"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hamburger -->
+    <div class="humberger-list" id="humberger-list">
+        <a href="/">Home</a>
+        <a href="./Blog">Blog</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="blog-detail">
+        <div class="blog-detail-container">
+            <h1>{{data.title}}</h1>
+            <div class="author">{{data.createdAt}} | {{data.author}}</div>
+            <img src="assets/img/blog-detail.png" alt="detail" />
+            <p>
+               {{data.content}}
+            </p>
+         </div>
+    </div>
+</body>
+</html>

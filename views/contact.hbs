@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/contact.css">
+    <title>Document</title>
+</head>
+<body>
+     <nav>
+        <div class="left">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="./Blog">Blog</a></li>
+                <li><a href="./testimonial">Testimonial</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <a href="#">Contact me</a>
+            <button onclick="btnHmbrgr()">☰</button>
+        </div>
+    </nav>
+    <div id="humberger-list" class="humberger-list">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+    <form>
+        <h1>Get In Touch</h1>
+        <div>
+            <label for="nameInput">Name</label>
+            <input type="text" id="nameInput" name="name" placeholder="your name">
+        </div>
+        <div>
+            <label for="emailInput">Email</label>
+            <input type="text" id="emailInput" name="email" placeholder="your email">
+        </div>
+        <div>
+            <label for="numberInput">Number</label>
+            <input type="number" id="numberInput" name="number" placeholder="your number">
+        </div>
+        <div>
+            <label for="position">Position</label>
+            <select id="position" name="position">
+                <option hidden>Select Option</option>
+                <option>Frontend Developer</option>
+                <option>Backend Developer</option>
+                <option>Fullstack Developer</option>
+            </select>
+        </div>
+        <div>
+            <label for="address">Address</label>
+            <textarea id="address" name="address" placeholder="content"></textarea>
+        </div>
+        <div class="tmbl-submit">
+            <button type="button" onclick="getData()">Submit</button>
+        </div>
+    </form>
+
+    <script src="/asset/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek Saya</title>
+    <link rel="stylesheet" href="/asset/Blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <nav>
+        <div class="left">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="./Blog" style="color: black;">Blog</a></li>
+                <li><a href="./testimonial">Testimonial</a></li>
+            </ul>
+        </div>
+    
+        <div class="right">
+            <a href="./contact">Contact Me</a>
+            <button onclick="btnHmbrgr()"><i class="fa-solid fa-bars fa-xl"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hamburger -->
+    <div class="humberger-list" id="humberger-list">
+        <a href="./index.html">Home</a>
+        <a href="./Blog.html">Blog</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- projeck -->
+
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form action="/edit-blog/{{data.id}}" method="POST">
+            <h1>Update Post Blog</h1>
+            <div>
+              <label for="input-blog-title">Title</label>
+              <input id="input-blog-title" name="title" value="{{data.title}}" required>
+            </div>
+            <div>
+              <label for="input-blog-content">Content</label>
+              <textarea 
+              id="input-blog-content" 
+              name="content"
+              required>{{data.content}}</textarea>
+            </div>
+            <input type="text" name="createdAt" value="{{data.createdAt}}" hidden>
+            <input type="text" name="author" value="{{data.author}}" hidden>
+            <!-- <div>
+                        <div style="display: flex; gap : 2">
+                            <input type="checkbox" id="nodejs" value="nodejs" />
+                            <label>NodeJs</label>
+                        </div>
+                        <div style="display: flex; gap : 2">
+                            <input type="checkbox" id="python" value="python" />
+                            <label>Python</label>
+                        </div>
+                    </div> -->
+            <div>
+              <label>Upload Image</label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <p>Attach File</p>
+                  <i class="fa-solid fa-link fa-lg"></i>
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button>Post Blog</button>
+            </div>
+          </form>
+        </div>
+      </div>
+        <!-- dynamic content would be here -->
+    
+    <script src=""></script>
+</body>
+</html>

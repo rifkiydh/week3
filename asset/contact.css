@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #F7F8FA;
+}
+
+nav {
+    background-color: #FE4E30;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    box-shadow: 0px 0px 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.left ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.left ul li a {
+    text-decoration: none;
+    padding: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: black;
+}
+
+.right a {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: #F7F8FA;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 80px;
+    float: right;
+    margin-top: 5px;
+    background-color: #F7F8FA;
+    color: black;
+}
+
+.right {
+    width: 200px;
+    align-items: center;
+}
+
+.right button {
+    display: none;
+    background-color: #FE4E30;
+    padding: 10px;
+    border: 1px solid #FE4E30;
+    color: black;
+}
+
+/* Hamburger */
+.humberger-list {
+    display: none;
+    flex-direction: column;
+    background-color: #FE4E30;
+}
+
+.humberger-list.active {
+    display: flex;
+}
+
+.humberger-list a {
+    margin: auto;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.humberger-list a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* Formulir CSS */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 900;
+}
+
+form {
+    width: 500px;
+    margin: 50px auto;
+    border-radius: 15px;
+    background-color: #ffffff;
+    padding: 50px;
+    box-shadow: 0px 0px 3px;
+}
+
+label {
+    font-weight: 900;
+}
+
+input, select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+input:hover, select:hover, textarea:hover {
+    box-shadow: 0px 0px 5px;
+}
+
+form div {
+    margin: 30px 0;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    color: #ffffff;
+    cursor: pointer;
+    float: right;
+    background-color: black;
+    padding: 5px 20px;
+    border-radius: 12px;
+    font-weight: 900;
+    transition: transform 0.5s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    .right a {
+        display: none;
+    }
+
+    .left a {
+        display: none;
+    }
+
+    .humberger-list {
+        display: none;
+    }
+
+    .right button {
+        display: flex;
+    }
+}
